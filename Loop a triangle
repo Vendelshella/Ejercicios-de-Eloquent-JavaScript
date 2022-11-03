@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Looping a triangle</title>
+</head>
+	<body>
+		<script type="text/javascript">
+//Looping a triangle con while y con for:
+
+let simbolo="#";
+let countInt=0;
+let countExt=1;
+
+while (countExt<=7){
+	while (countInt<countExt){
+		document.write(simbolo);
+		countInt++;
+	}
+	document.write("</br>");
+	countInt=0;
+	countExt++;
+}
+
+for (let line = "#"; line.length < 8; line += "#"){
+  document.write(line+"</br>");
+}
+			</script>
+	</body>
+</html>
