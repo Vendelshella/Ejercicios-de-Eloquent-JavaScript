@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Beans Count</title>
+</head>
+	<body>
+		<script type="text/javascript">
+//Conteo de Frijoles
+
+//Conteo de letras en un string
+function count(string) {
+	return string.length;
+}
+console.log(count("BBC"));
+
+//Conteo de un tipo de caracter en el string
+function countBs(string) {
+	let contadorB=0;
+
+	for (i=0; i<string.length; i++){
+			if(string[i]=="B"){
+				contadorB++;
+			}
+			else{}
+		}
+	return contadorB;
+}
+console.log(countBs("BBC"));
+
+//Definicion del string y del caracter en los parametros.
+function countChar(string, caracter) {
+	let contador=0;
+
+	for (i=0; i<string.length; i++){
+			if(string[i]==caracter){
+				contador++;
+			}
+			else{}
+		}
+	return contador;
+}
+console.log(countChar("kakkerlak", "k"));
+			</script>
+	</body>
+</html>
