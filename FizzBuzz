@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>FizzBuzz</title>
+</head>
+	<body>
+		<script type="text/javascript">
+//FizzBuzz
+
+//Parte1: Write a program that uses console.log to print all the numbers from 1 to 100, with two exceptions. For numbers divisible by 3, print "Fizz" instead of the number, and for numbers divisible by 5 (and not 3), print "Buzz" instead.
+
+for (let numero=1; numero<=100; numero++){
+	
+	if (numero%3==0 ){
+		document.write("Fizz ");
+	}
+	else if (numero%5==0){
+		document.write("Buzz ");
+	}
+
+	else {document.write(numero+" ");}
+}
+
+document.write("</br>")
+
+//Parte2: When you have that working, modify your program to print "FizzBuzz" for numbers that are divisible by both 3 and 5 (and still print "Fizz" or "Buzz" for numbers divisible by only one of those).
+
+for (let numero=1; numero<=100; numero++){
+	if (numero%3==0 && numero%5==0){document.write("FizzBuzz ");}
+	else if (numero%3==0){document.write("Fizz ");}
+	else if (numero%5==0){document.write("Buzz ");}
+	else {document.write(numero+" ");}
+}
+		</script>
+	</body>
+</html>
